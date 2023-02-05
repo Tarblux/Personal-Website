@@ -509,7 +509,7 @@ main {
 
 
 /**
- * #service 
+ * # Education Section 
  */
 
 .service { margin-bottom: 35px; }
@@ -517,7 +517,7 @@ main {
 .service-title { margin-bottom: 20px; }
 
 .service-list {
-  display: grid;
+  display: block;
   grid-template-columns: 1fr;
   gap: 20px;
 }
@@ -526,9 +526,11 @@ main {
   position: relative;
   background: var(--border-gradient-onyx);
   padding: 20px;
+  margin : 20px; 
   border-radius: 14px;
   box-shadow: var(--shadow-2);
-  z-index: 1;
+  z-index: 1 ;
+  display: inline;
 }
 
 .service-item::before {
