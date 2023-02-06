@@ -514,7 +514,9 @@ main {
 
 .service { margin-bottom: 35px; }
 
-.service-title { margin-bottom: 20px; }
+.service-title { 
+  text-align: center;
+  margin-bottom: 20px; }
 
 .service-list {
   display: block;
@@ -725,12 +727,12 @@ main {
 
 
 /**
- * #clients 
+ * #Programming Languages 
  */
 
-.clients { margin-bottom: 15px; }
+.programminglanguages { margin-bottom: 15px; }
 
-.clients-list {
+.programminglanguages-list {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -745,25 +747,80 @@ main {
   scroll-padding-inline: 25px;
 }
 
-.clients-item {
-  min-width: 50%;
+.programminglanguages-item {
+  min-width: 10%;
   scroll-snap-align: start;
 }
 
-.clients-item img {
+/* Removed Greyscale effect */
+/* .programminglanguages-item img {
   width: 100%;
   filter: grayscale(1);
   transition: var(--transition-1);
+} */
+
+/* .programminglanguages-item img:hover { filter: grayscale(0); } */
+
+
+/**
+ * #Tools
+ */
+
+.tools { margin-bottom: 15px; }
+
+.tools-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px;
+  padding-bottom: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 25px;
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.tools-item {
+  min-width: 10%;
+  scroll-snap-align: start;
+}
+
+/**
+ * # Design and Creativity 
+ */
+
+ .design { margin-bottom: 15px; }
+
+ .design-list {
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 15px;
+   margin: 0 -15px;
+   padding: 25px;
+   padding-bottom: 25px;
+   overflow-x: auto;
+   scroll-behavior: smooth;
+   overscroll-behavior-inline: contain;
+   scroll-snap-type: inline mandatory;
+   scroll-padding-inline: 25px;
+ }
+ 
+ .design-item {
+   min-width: 10%;
+   scroll-snap-align: start;
+ }
 
 
+ 
 
 
 
 /*-----------------------------------*\
-  #RESUME
+  #RESUME  PAGE 
 \*-----------------------------------*/
 
 .article-title { margin-bottom: 30px; }
@@ -836,7 +893,19 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+.programminglanguages-title {
+
+color: rgb(255, 255, 255);
+margin-bottom: 20px ;
+
+}
+
+
+
+ 
+.skills-title { 
+  text-align: center;
+  margin-bottom: 20px; }
 
 .skills-list { padding: 20px; }
 
