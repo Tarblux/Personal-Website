@@ -562,6 +562,53 @@ main {
 }
 
 
+
+
+/* ----------------
+      Languages  
+/* ---------------- */ 
+
+.language{ margin-bottom: 15px; }
+
+.language-title {
+  padding-bottom: 8px;
+  text-align: center;
+  }
+.language-list {
+ display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px;
+  padding-bottom: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 25px;
+  }
+ 
+ .language-item {
+  min-width: 10%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+.language-item-label{
+
+  padding-top: 10px;
+  text-align: center;
+  color: aliceblue;
+  font-weight: var(--fw-600) ;
+}
+
+.language-item-text{
+padding-top: 5px;
+}
+
 /**
  * #Experience  
  */
@@ -591,7 +638,7 @@ main {
 }
 
 .testimonials-item {
- 
+  padding-bottom: 20px;
   scroll-snap-align: center;
 }
 
@@ -634,6 +681,11 @@ main {
   margin-bottom: 15px;
 }
 
+.testimonials-item-ta {
+
+  padding-left: 16%;
+  margin-bottom: 15px;
+}
 
 
 .bulletpoint-excla li::marker {
@@ -783,6 +835,11 @@ padding-left: 0.50em ;
   
   margin-bottom: 15px; }
 
+
+.programminglanguages-title {
+  text-align: center;
+}
+
 .programminglanguages-list {
   display: flex;
   justify-content: flex-start;
@@ -800,7 +857,11 @@ padding-left: 0.50em ;
 
 .programminglanguages-item {
   min-width: 10%;
-  scroll-snap-align: start;
+  min-width: 10%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Removed Greyscale effect */
@@ -820,6 +881,10 @@ padding-left: 0.50em ;
 .tools { 
   margin-bottom: 15px; }
 
+.tools-title{
+ text-align: center;
+}
+
 .tools-list {
   display: flex;
   justify-content: flex-start;
@@ -837,11 +902,14 @@ padding-left: 0.50em ;
 
 .tools-item {
   min-width: 10%;
-  scroll-snap-align: start;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tools-item-stata {
- margin-top: 10px ;
+margin-top: 13px;
 }
 
 /**
@@ -850,24 +918,31 @@ padding-left: 0.50em ;
 
  .design { margin-bottom: 15px; }
 
- .design-list {
-   display: flex;
-   justify-content: flex-start;
-   align-items: flex-start;
-   gap: 15px;
-   margin: 0 -15px;
-   padding: 25px;
-   padding-bottom: 25px;
-   overflow-x: auto;
-   scroll-behavior: smooth;
-   overscroll-behavior-inline: contain;
-   scroll-snap-type: inline mandatory;
-   scroll-padding-inline: 25px;
+.design-title {
+  padding-bottom: 8px;
+  text-align: center;
+}
+.design-list {
+ display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px;
+  padding-bottom: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 25px;
  }
  
  .design-item {
    min-width: 10%;
-   scroll-snap-align: start;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
  }
 
 
