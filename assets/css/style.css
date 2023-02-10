@@ -568,45 +568,19 @@ main {
       Languages  
 /* ---------------- */ 
 
-.language{ margin-bottom: 15px; }
 
-.language-title {
-  padding-bottom: 8px;
+.languagesection {
   text-align: center;
-  }
-.language-list {
- display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 25px;
-  padding-bottom: 25px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
-  }
- 
- .language-item {
-  min-width: 10%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
-
-.language-item-label{
-
-  padding-top: 10px;
-  text-align: center;
-  color: aliceblue;
-  font-weight: var(--fw-600) ;
 }
 
-.language-item-text{
-padding-top: 5px;
+.language-title {
+  text-align: center;
+  }
+
+.language-pic {
+margin-top: -40px;
+margin-left: 17px;
+margin-bottom: -50px;
 }
 
 /**
@@ -686,6 +660,34 @@ padding-top: 5px;
   padding-left: 16%;
   margin-bottom: 15px;
 }
+
+.testimonials-item-construction {
+
+  padding-top: 10%;
+  padding-left: 34%;
+  margin-bottom: 7px;
+}
+
+.testimonials-item-construction2 {
+
+  padding-left: 36%;
+  margin-bottom: 7px;
+}
+
+.bulletpoint-excla2 li {
+  padding-bottom: 85px;
+  padding-left: 0.50em ;
+  }
+  
+.construction-pic {
+
+  align-self: auto;
+}
+
+
+  .bulletpoint-excla2 li::marker {
+    content: '💭' ;
+  }
 
 
 .bulletpoint-excla li::marker {
@@ -814,7 +816,7 @@ padding-left: 0.50em ;
 
 .modal-content time {
   font-size: var(--fs-6);
-  color: var(--light-gray-70);
+  color: white;
   font-weight: var(--fw-300);
   margin-bottom: 10px;
 }
@@ -826,6 +828,9 @@ padding-left: 0.50em ;
   line-height: 1.6;
 }
 
+.modal-words {
+  color: aliceblue;
+}
 
 /**
  * #Programming Languages 
