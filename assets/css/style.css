@@ -956,14 +956,14 @@ margin-top: 13px;
 
 
 /*-----------------------------------*\
-  #RESUME  PAGE 
+  #RELEVANT COURSEWORK 
 \*-----------------------------------*/
 
 .article-title { margin-bottom: 30px; }
 
 
 /**
- * education and experience 
+ * MATHEMTICS AND ECONOMICS 
  */
 
 .timeline { margin-bottom: 30px; }
@@ -1277,7 +1277,7 @@ margin-bottom: 20px ;
 .blog-banner-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   transition: var(--transition-1);
 }
 
