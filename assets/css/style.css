@@ -508,86 +508,16 @@ main {
 
 
 
-/**
- * # Education Section 
- */
-
-.service { margin-bottom: 35px; }
-
-.service-title { 
-  text-align: center;
-  margin-bottom: 20px; }
-
-.service-list {
-  display: block;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
-.service-item {
-  position: relative;
-  background: var(--border-gradient-onyx);
-  padding: 20px;
-  margin : 20px; 
-  border-radius: 14px;
-  box-shadow: var(--shadow-2);
-  z-index: 1 ;
-  display: inline;
-}
-
-.service-item::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: var(--bg-gradient-jet);
-  border-radius: inherit;
-  z-index: -1;
-}
-
-.service-icon-box { margin-bottom: 10px; }
-
-.service-icon-box img { margin: auto; }
-
-.service-content-box { text-align: center; }
-
-.service-item-title { margin-bottom: 7px; }
-
-.service2-item-title { text-align: right; }
-
-.service-item-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-400) ;
-  line-height: 2 ;
-}
 
 
 
 
-/* ----------------
-      Languages  
-/* ---------------- */ 
-
-
-.languagesection {
-  text-align: center;
-}
-
-.language-title {
-  text-align: center;
-  }
-
-.language-pic {
-margin-top: -40px;
-margin-left: 17px;
-margin-bottom: -50px;
-}
 
 /**
  * #Experience  
  */
 
-.testimonials { margin-bottom: 30px; }
+.testimonials { margin-bottom: 1px; }
 
 .testimonials-title { 
   text-align: center;
@@ -832,6 +762,166 @@ padding-left: 0.50em ;
   color: aliceblue;
 }
 
+
+/**
+ * # Education Section 
+ */
+
+ .service { margin-bottom: 35px; }
+
+ .service-title { 
+   text-align: center;
+   margin-bottom: 30px; }
+ 
+ .service-list {
+   display: block;
+   grid-template-columns: 1fr;
+   gap: 20px;
+ }
+ 
+ .service-item {
+   position: relative;
+   background: var(--border-gradient-onyx);
+   padding: 20px;
+   margin : 20px; 
+   border-radius: 14px;
+   box-shadow: var(--shadow-2);
+   z-index: 1 ;
+   display: inline;
+ }
+ 
+ .service-item::before {
+   content: "";
+   position: absolute;
+   inset: 1px;
+   background: var(--bg-gradient-jet);
+   border-radius: inherit;
+   z-index: -1;
+ }
+ 
+ .service-icon-box { margin-bottom: 10px; }
+ 
+ .service-icon-box img { margin: auto; }
+ 
+ .service-content-box { text-align: center; }
+ 
+ .service-item-title { margin-bottom: 7px; }
+ 
+ .service2-item-title { text-align: right; }
+ 
+ .service-item-text {
+   color: var(--light-gray);
+   font-size: var(--fs-6);
+   font-weight: var(--fw-400) ;
+   line-height: 2 ;
+ }
+
+
+
+ /*-----------------------------------*\
+  #RELEVANT COURSEWORK 
+\*-----------------------------------*/
+
+.article-title { margin-bottom: 30px; }
+
+
+/**
+ * MATHEMTICS AND ECONOMICS
+ */
+
+
+.relevant-coursework {
+  padding-top: 35px ;
+  padding-bottom: 20px;
+  text-align: center;
+
+}
+
+.timeline { 
+  float: left;
+  width: 50% ;
+  margin-bottom: 30px; }
+
+.timeline .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.timeline-list {
+  font-size: var(--fs-6);
+  margin-left: 45px;
+}
+
+.timeline-item { position: relative; }
+
+.timeline-item:not(:last-child) { margin-bottom: 20px; }
+
+.timeline-item-title {
+  font-size: var(--fs-6);
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+.timeline-list span {
+  color: var(--vegas-gold);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: var(--jet);
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: var(--text-gradient-yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--jet);
+}
+
+.timeline-text {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+
+
+ /* ----------------
+      Languages  
+/* ---------------- */ 
+
+
+.languagesection {
+  text-align: center;
+}
+
+.language-title {
+  margin-top: 600px ;
+  text-align: center;
+  }
+
+.language-pic {
+margin-top: -40px;
+margin-left: 17px;
+margin-bottom: -50px;
+}
+
+
+
 /**
  * #Programming Languages 
  */
@@ -858,6 +948,7 @@ padding-left: 0.50em ;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: 25px;
+  
 }
 
 .programminglanguages-item {
@@ -867,6 +958,7 @@ padding-left: 0.50em ;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 /* Removed Greyscale effect */
@@ -955,74 +1047,7 @@ margin-top: 13px;
 
 
 
-/*-----------------------------------*\
-  #RELEVANT COURSEWORK 
-\*-----------------------------------*/
 
-.article-title { margin-bottom: 30px; }
-
-
-/**
- * MATHEMTICS AND ECONOMICS 
- */
-
-.timeline { margin-bottom: 30px; }
-
-.timeline .title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 25px;
-}
-
-.timeline-list {
-  font-size: var(--fs-6);
-  margin-left: 45px;
-}
-
-.timeline-item { position: relative; }
-
-.timeline-item:not(:last-child) { margin-bottom: 20px; }
-
-.timeline-item-title {
-  font-size: var(--fs-6);
-  line-height: 1.3;
-  margin-bottom: 7px;
-}
-
-.timeline-list span {
-  color: var(--vegas-gold);
-  font-weight: var(--fw-400);
-  line-height: 1.6;
-}
-
-.timeline-item:not(:last-child)::before {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: -30px;
-  width: 1px;
-  height: calc(100% + 50px);
-  background: var(--jet);
-}
-
-.timeline-item::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -33px;
-  height: 6px;
-  width: 6px;
-  background: var(--text-gradient-yellow);
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--jet);
-}
-
-.timeline-text {
-  color: var(--light-gray);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
-}
 
 
 /**
@@ -1073,6 +1098,59 @@ margin-bottom: 20px ;
   height: 100%;
   border-radius: inherit;
 }
+
+
+/*-----------------------------------*\
+  # About
+\*-----------------------------------*/
+
+
+.story-title {
+
+  text-align: center;
+}
+
+
+
+.pic-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.montepic {
+  width: 90%;
+  max-width: 700px;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
