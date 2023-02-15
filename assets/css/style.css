@@ -818,6 +818,7 @@ padding-left: 0.50em ;
 
 
 
+
  /*-----------------------------------*\
   #RELEVANT COURSEWORK 
 \*-----------------------------------*/
@@ -907,6 +908,8 @@ padding-left: 0.50em ;
 
 .languagesection {
   text-align: center;
+  max-width: 100%;
+
 }
 
 .language-title {
@@ -1101,7 +1104,7 @@ margin-bottom: 20px ;
 
 
 /*-----------------------------------*\
-  # About
+  # About Second Page
 \*-----------------------------------*/
 
 
@@ -1112,19 +1115,85 @@ margin-bottom: 20px ;
 
 
 
-.pic-section {
+.bio-section {
+  display: flex;
+  align-items: center;
+}
+
+
+.profile-pic {
+  width: 500px;
+  height: 500px;
+  border-radius: 10%;
+  margin-right: 20px;
+}
+
+.bio-text {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
 }
 
-.montepic {
-  width: 90%;
-  max-width: 700px;
-  margin-bottom: 0px;
+
+
+.faq-section-title { text-align: center; 
+  padding-top: 40px;
+  padding-bottom: 40px ;
 }
 
+.faq-content {
+text-align: justify;
+color: var(--light-gray);
+padding-bottom: 30px ;
+}
+
+.faq-content2 {
+  text-align: justify;
+  color: var(--light-gray);
+  padding-top: 10px ;
+  }
+
+
+summary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: var(--eerie-black-2);
+  box-shadow: var(--shadow-5);
+  color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+
+
+details > summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+details[open] > summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0; margin-top: -10px}
+  100%  {opacity: 1; margin-top: 0px}
+}
 
 
 
