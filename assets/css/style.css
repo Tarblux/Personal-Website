@@ -600,9 +600,9 @@ main {
   top: 0%;
   left: 30%;
   transform: translate(-50%, -50%);
-  background: var(--bg-gradient-onyx);
+  /* background: var(--bg-gradient-onyx);
   border-radius: 14px;
-  box-shadow: var(--shadow-1);
+  box-shadow: var(--shadow-1); */
 }
 
 
@@ -844,6 +844,8 @@ main {
   gap: 20px;
 }
 
+
+
 .service-item {
   position: relative;
   background: var(--border-gradient-onyx);
@@ -854,6 +856,8 @@ main {
   z-index: 1;
   display: inline;
 }
+
+
 
 .service-item::before {
   content: "";
@@ -1229,7 +1233,9 @@ main {
 
 .bio-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  margin: 50px 0;
 }
 
 
@@ -1238,6 +1244,8 @@ main {
   height: 500px;
   border-radius: 10%;
   margin-right: 20px;
+  object-fit: contain;
+  margin-bottom: 20px;
 }
 
 .bio-text {
@@ -1247,6 +1255,23 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+@media screen and (min-width: 768px) {
+  .bio-section {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .profile-pic {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .bio-text {
+    max-width: 50%;
+    text-align: left;
+  }
 }
 
 
@@ -1630,7 +1655,7 @@ details[open] summary~* {
   #CONTACT
 \*-----------------------------------*/
 
-.mapbox {
+/* .mapbox {
   position: relative;
   height: 250px;
   width: 100%;
@@ -1649,7 +1674,7 @@ details[open] summary~* {
   height: 100%;
   border: none;
   filter: grayscale(1) invert(1);
-}
+} */
 
 .contact-form {
   margin-bottom: 10px;
