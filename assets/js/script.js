@@ -115,8 +115,25 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 // Accordion Dripdown
 
+const accordionItems = document.querySelectorAll('.accordion-item');
 
-
+accordionItems.forEach(item => {
+  const header = item.querySelector('.accordion-header');
+  header.addEventListener('click', () => {
+    const activeItem = document.querySelector('.accordion-item.active');
+    if (activeItem && activeItem !== item) {
+      activeItem.classList.remove('active');
+      activeItem.querySelector('.accordion-content').style.maxHeight = null;
+    }
+    item.classList.toggle('active');
+    const content = item.querySelector('.accordion-content');
+    if (item.classList.contains('active')) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    } else {
+      content.style.maxHeight = null;
+    }
+  });
+});
 
 
 

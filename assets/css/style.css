@@ -1075,7 +1075,143 @@ main {
 
 /* Accordion Dripdown */
 
+.accordion {
+  margin-bottom: 20px;
+}
 
+.accordion-item {
+  padding-bottom: 1px;
+}
+
+.accordion-header {
+  text-align: center;
+  background-color: var(--eerie-black-2);
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.accordion-header span {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.accordion-header span:before { 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  opacity: 0.8;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.accordion-content {
+  max-height: 0;
+  padding-top: 20px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-content-section {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.accordion-content-wrapper {
+  display: block;
+  align-items: center;
+}
+
+.accordion-content-text {
+  color: aliceblue;
+  flex: 1;
+  margin-top: 8px;
+}
+
+.accordion-content-image {
+  flex: 0 0 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.accordion-content-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.accordion-content-image-label {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: aliceblue;
+}
+.accordion-item.active .accordion-content {
+  max-height: auto;
+  transition: max-height 0.5s ease-in;
+}
+
+.progress-bar {
+  height: 7px;
+  background-color: #727272;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.progress-html {
+  height: 100%;
+  width: 80%;
+  background-color: #4CAF50;
+  transition: width 0.5s ease;
+}
+
+.progress-css {
+  height: 100%;
+  width: 60%;
+  background-color: #4CAF50;
+  transition: width 0.5s ease;
+}
+
+.progress-js {
+  height: 100%;
+  width: 30%;
+  background-color: #fffb1d;
+  transition: width 0.5s ease;
+}
+
+
+.progress-python {
+  height: 100%;
+  width: 20%;
+  background-color: #fffb1d;
+  transition: width 0.5s ease;
+}
+
+.progress-sql {
+  height: 100%;
+  width: 50%;
+  background-color: #4CAF50;
+  transition: width 0.5s ease;
+}
+
+.progress-r {
+  height: 100%;
+  width: 95%;
+  background-color: #4CAF50;
+  transition: width 0.5s ease;
+}
 
 
 
@@ -1226,6 +1362,8 @@ main {
   height: 100%;
   border-radius: inherit;
 }
+
+
 
 
 /*-----------------------------------*\
