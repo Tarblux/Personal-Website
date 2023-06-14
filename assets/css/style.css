@@ -1194,8 +1194,8 @@ main {
 
 .progress-python {
   height: 100%;
-  width: 20%;
-  background-color: #fffb1d;
+  width: 75%;
+  background-color: #4CAF50;
   transition: width 0.5s ease;
 }
 
@@ -1205,6 +1205,14 @@ main {
   background-color: #4CAF50;
   transition: width 0.5s ease;
 }
+
+.progress-c {
+  height: 100%;
+  width: 20%;
+  background-color: #fffb1d;
+  transition: width 0.5s ease;
+}
+
 
 .progress-r {
   height: 100%;
